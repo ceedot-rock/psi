@@ -15,3 +15,8 @@
 {"d":"2026-10-17","c":"unity","o":"unity day: psi-doctor green, Hub 64/64, conductor 13/13, muse-life 3/3 suites pass"}
 {"d":"2026-10-17","c":"ship","o":"psi forked: pushed ceedot-rock/psi public main (HTTPS, SSH blocked in sandbox); depot psi byte-identical"}
 {"d":"2026-10-17","c":"ship","o":"psi repo dressed: landing README, DEMO with verified numbers, CI gate, tag v1.0.0, release + tarball, topics; license still open"}
+{"d":"2026-10-17","c":"psi-session","o":"gray-libra opened under psi: induction identity+17 obs+goals+env-model, peers none, psi-doctor PSI-GREEN 116 wired"}
+{"d": "2026-10-17", "c": "tooling", "o": "todo-tool reminder has no matching tool in this session: use explicit in-chat checklists, do not wait"}
+{"d": "2026-10-17", "c": "tooling", "o": "sharp edges fixed: obs.sh triple-append, verify-live.sh control-first UNKNOWN-not-DOWN, test-tools.sh TOOLS-GREEN, workflow scripts end with file-writing scribe"}
+{"d": "2026-10-17", "c": "proxy", "o": "external HTTPS works via proxy env; only loopback needs no_proxy bypass. stripping all proxy vars breaks external checks (verify-live fixed)"}
+{"d": "2026-10-17", "c": "ship", "o": "www.slidphilabs.com live-verified: /healthz 200 + new homepage title Tools that check. site push 91f32ab confirmed serving"}

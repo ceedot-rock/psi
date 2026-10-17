@@ -12,4 +12,7 @@ esac
 if [[ "$cmd" == *"drive"*upload* || "$cmd" == *"gd import"* ]]; then
   echo "PREFLIGHT-WARN: Hub drive needs membership + 2-of-3 shards; blob cap 8 MB"
 fi
+if [[ "$cmd" == *"npm publish"* || "$cmd" == *"fly deploy"* || "$cmd" == *push*--tags* || "$cmd" == *push*tags* || "$cmd" == *push*v[0-9]* ]]; then
+  echo "PREFLIGHT-WARN: publish-shaped command is one-way; run the ship checklist (safety/ship.md) and confirm intent first"
+fi
 echo "PREFLIGHT-OK"

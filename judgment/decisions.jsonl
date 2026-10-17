@@ -1,2 +1,5 @@
 {"d":"2026-10-17","c":"decision","o":"plain-Node harnesses over fixing sandbox syscalls","why":"environmental wall, routing around is cheaper than appeal","expect":"all three serves verify in-namespace","hit":true}
 {"d":"2026-10-17","c":"decision","o":"reset Hub state instead of salvaging stranger account","why":"all state was own test residue; clean owner path beats membership repair","expect":"cee owner, drive upload passes","hit":true}
+{"d":"2026-10-17","c":"decision","o":"site push 91f32ab ships tonight","why":"site work is done and verified; holding it gains nothing","expect":"91f32ab live on the site host","hit":true}
+{"d":"2026-10-17","c":"decision","o":"retire Wix; Fly serves the site now","why":"one live host beats two drifting copies","expect":"Wix gone, Fly serving, HOME-COPY.md renamed","hit":false}
+{"d":"2026-10-17","c":"decision","o":"bump scope: version-bump plus publish everything","why":"partial publishes rot; ship the whole set together","expect":"version bumped, everything published","hit":false}
