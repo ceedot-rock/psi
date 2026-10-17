@@ -57,5 +57,11 @@ bash "$ROOT/scripts/snapshot.sh" doctor-check >/dev/null 2>&1 && [ -f "$ROOT/sna
 rm -rf -- "$ROOT/snapshots/doctor-check"
 bash "$ROOT/scripts/export.sh" /tmp/psi-doctor-test.tar.gz >/dev/null 2>&1 && [ -s /tmp/psi-doctor-test.tar.gz ] && echo "ok: export packs" || { echo "GAP: export"; fail=1; }
 rm -f -- /tmp/psi-doctor-test.tar.gz
+syntax_bad=0
+for sh in "$ROOT"/scripts/*.sh "$ROOT"/gates/*.sh; do
+  bash -n "$sh" 2>/dev/null || { echo "GAP: syntax $sh"; syntax_bad=1; }
+done
+[ "$syntax_bad" = 0 ] && echo "ok: scripts parse" || fail=1
+bash "$ROOT/scripts/test-tools.sh" >/dev/null 2>&1 && echo "ok: tools green" || { echo "GAP: tools"; fail=1; }
 [ "$fail" = 0 ] && echo "PSI-GREEN: quad complete, 116 wired" || echo "PSI-RED"
 exit "$fail"
