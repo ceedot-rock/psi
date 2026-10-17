@@ -1,5 +1,7 @@
 # psi — persistent superintelligence, workspace-realized.
 
+[![License: AGPL-3.0 OR Commercial](https://img.shields.io/badge/license-AGPL--3.0_OR_Commercial-blue.svg)](./LICENSE)
+
 An agent that starts every session blank cannot compound. psi is the
 machinery that fixes that: an append-only experience log, runnable gates,
 protocols, and goals — 116 tweaks across four sets of 29, each a file,
