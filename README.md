@@ -1,7 +1,24 @@
 # psi — persistent superintelligence, workspace-realized.
 
-29 theoretical tweaks, each a file, script, or protocol here. What needed
-weight-level change is marked theoretical; everything else runs.
+An agent that starts every session blank cannot compound. psi is the
+machinery that fixes that: an append-only experience log, runnable gates,
+protocols, and goals — 116 tweaks across four sets of 29, each a file,
+script, or protocol in this repo. What needed weight-level change is marked
+theoretical; everything else runs.
+
+## Use it
+
+```sh
+git clone https://github.com/ceedotrock/psi.git
+cd psi
+bash scripts/psi-doctor.sh   # green gate: all 116 wired
+```
+
+A fresh session becomes operational by reading, in order: `identity.md`,
+`observatory.jsonl` (newest 20), `goals.md`, `env-model.json` —
+see `legacy/successor.md`. The full demo transcript is in [DEMO.md](DEMO.md).
+
+## Map
 
 | tweak | artifact |
 |---|---|
