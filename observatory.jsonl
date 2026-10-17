@@ -13,3 +13,4 @@
 {"d":"2026-10-17","c":"psi-build","o":"tweaks 30-59 built (balanced set); gate caught own SIGPIPE-under-pipefail bug before shipping; snapshot 2026-10-17-v59"}
 {"d":"2026-10-17","c":"psi-build","o":"tweaks 60-88 (depth) + 89-117 (crown) built; quad complete at 116, gate green, snapshot 2026-10-17-v117"}
 {"d":"2026-10-17","c":"unity","o":"unity day: psi-doctor green, Hub 64/64, conductor 13/13, muse-life 3/3 suites pass"}
+{"d":"2026-10-17","c":"ship","o":"psi forked: pushed ceedot-rock/psi public main (HTTPS, SSH blocked in sandbox); depot psi byte-identical"}
