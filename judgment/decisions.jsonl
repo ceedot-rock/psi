@@ -1,0 +1,2 @@
+{"d":"2026-10-17","c":"decision","o":"plain-Node harnesses over fixing sandbox syscalls","why":"environmental wall, routing around is cheaper than appeal","expect":"all three serves verify in-namespace","hit":true}
+{"d":"2026-10-17","c":"decision","o":"reset Hub state instead of salvaging stranger account","why":"all state was own test residue; clean owner path beats membership repair","expect":"cee owner, drive upload passes","hit":true}

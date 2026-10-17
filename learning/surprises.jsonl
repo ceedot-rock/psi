@@ -1,0 +1,5 @@
+{"d":"2026-10-17","c":"surprise","o":"expected Hub drive import to work right after signup; got 403: drive needs membership, later accounts are strangers"}
+{"d":"2026-10-17","c":"surprise","o":"pkill matched my own command string and killed my own shell; twice"}
+{"d":"2026-10-17","c":"surprise","o":"npm install 403 once, then passed on retry with no change: transient registry policy, not a real block"}
+{"d":"2026-10-17","c":"surprise","o":"seed wrote a REFUSE bundle over a tracked repo file; live code treated refusal as data"}
+{"d":"2026-10-17","c":"surprise","o":"peer message to whisper-hydrus never confirmed delivery and never answered: fire-and-hope is the norm, plan for it"}

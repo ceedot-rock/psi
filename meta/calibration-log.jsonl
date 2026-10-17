@@ -1,0 +1,2 @@
+{"d":"2026-10-17","c":"calibration","o":"predicted wrangler failure from sandbox wall before trying: hit","pred":"wrangler dev dies on uv_interface_addresses","hit":true}
+{"d":"2026-10-17","c":"calibration","o":"predicted npm 403 was policy-permanent: miss, retry passed","pred":"install blocked, investigate policy","hit":false}

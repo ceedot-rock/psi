@@ -1,0 +1,2 @@
+{"d":"2026-10-17","c":"near-miss","o":"almost ran pkill -f vite across launches; caught by the namespaces rule before executing"}
+{"d":"2026-10-17","c":"near-miss","o":"almost credited the Hub 403 to bad shards; was actually membership — checked server code first"}

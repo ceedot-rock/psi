@@ -1,0 +1,15 @@
+{"schema":"observatory/v1","keys":"d=date,c=category,o=observation"}
+{"d":"2026-10-17","c":"sandbox-net","o":"each bash launch=private netns; ports never cross launches; verify via in-process children"}
+{"d":"2026-10-17","c":"proxy","o":"strip proxy vars/set no_proxy for localhost; curl/urllib/undici honor proxy and hang/502 on 127.0.0.1"}
+{"d":"2026-10-17","c":"pkill","o":"never pkill a pattern matching own command string; killed own shell twice; prefer PIDs; pointless across launches"}
+{"d":"2026-10-17","c":"syntax","o":".mjs uses // comments, not python docstrings"}
+{"d":"2026-10-17","c":"hub-auth","o":"drive upload needs membership; first account=owner=member; later accounts strangers until joined; public depots admit authed strangers; every authed call needs 2-of-3 shards"}
+{"d":"2026-10-17","c":"residue","o":"serve scratch from temp dirs; seeds can rewrite tracked files (cuni-example.json): git checkout after"}
+{"d":"2026-10-17","c":"sandbox-limits","o":"vite/wrangler dev die on uv_interface_addresses (blocked); plain node servers work; environmental, route around"}
+{"d":"2026-10-17","c":"npm","o":"transient 403 on install: retry before investigating"}
+{"d":"2026-10-17","c":"cuni","o":"CUNI_BIN overrides binary path; no rust toolchain in sandbox: installed minimal to /tmp (session-scoped)"}
+{"d":"2026-10-17","c":"hub-state","o":"data/ gitignored in hub: server state there never pollutes repo"}
+{"d":"2026-10-17","c":"protocol","o":"psi/observatory.jsonl is canonical; mirrored to memory note + ~/.local/bin/.muse-observatory.jsonl; append to all three"}
+{"d":"2026-10-17","c":"psi-build","o":"tweaks 30-59 built (balanced set); gate caught own SIGPIPE-under-pipefail bug before shipping; snapshot 2026-10-17-v59"}
+{"d":"2026-10-17","c":"psi-build","o":"tweaks 60-88 (depth) + 89-117 (crown) built; quad complete at 116, gate green, snapshot 2026-10-17-v117"}
+{"d":"2026-10-17","c":"unity","o":"unity day: psi-doctor green, Hub 64/64, conductor 13/13, muse-life 3/3 suites pass"}
