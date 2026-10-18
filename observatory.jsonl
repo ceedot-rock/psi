@@ -20,3 +20,10 @@
 {"d": "2026-10-17", "c": "tooling", "o": "sharp edges fixed: obs.sh triple-append, verify-live.sh control-first UNKNOWN-not-DOWN, test-tools.sh TOOLS-GREEN, workflow scripts end with file-writing scribe"}
 {"d": "2026-10-17", "c": "proxy", "o": "external HTTPS works via proxy env; only loopback needs no_proxy bypass. stripping all proxy vars breaks external checks (verify-live fixed)"}
 {"d": "2026-10-17", "c": "ship", "o": "www.slidphilabs.com live-verified: /healthz 200 + new homepage title Tools that check. site push 91f32ab confirmed serving"}
+{"d": "2026-10-17", "c": "ship", "o": "product pages live: /tnssrc + /teachaid verified by title post-deploy; npm phi-rest card, sitemap, GPR mirror workflow shipped in b5a139a"}
+{"d": "2026-10-17", "c": "ship", "o": "tool gate live: anon POST /api/compress 402, keyed 200 zeros-to-8B. 0accad7. specialist.test failure pre-exists on HEAD (store assert), not a regression"}
+{"d": "2026-10-17", "c": "fix", "o": "specialist.test assumed engines present; all hosted runners shell out, so absent engines mean store-wins. test now branches on X_OK + drops stale ~/projects paths. suite 20/20"}
+{"d": "2026-10-18", "c": "ship", "o": "GA4 server-side purchase live in bdf682d (Stripe+x402, suite 24/24). needs GA4_API_SECRET fly secret to activate"}
+{"d": "2026-10-18", "c": "tooling", "o": "approvals: big combined shell commands get rejected, small single-purpose ones pass. split commit and push into separate calls"}
+{"d": "2026-10-18", "c": "ship", "o": "Agent-Rider DM unification pushed (61c9d01): aliases table+migration, canonical send/read/limits, /api/dm deprecated. needs: migration applied in Supabase editor, Odin old-id backfill"}
+{"d": "2026-10-18", "c": "fix", "o": "rider DM root cause: Fly RIDER keypair mismatched (token kid absent from JWKS). rotated pair, send+read loop proven live (Muse seat 01fe485a)"}

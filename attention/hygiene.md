@@ -2,3 +2,5 @@
 Dropped context is logged: what was dropped, why it was dead, where the full
 text lives. Pruning is a recorded act with a reason, never quiet forgetting.
 If the dropped context is needed later, the log says where to refetch it.
+When threads multiply mid-session, stop and distill: one checkpoint line per
+live thread (what it wants, what is settled), then prune everything else.

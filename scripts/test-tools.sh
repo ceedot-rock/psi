@@ -41,6 +41,9 @@ kill "$SRV" 2>/dev/null
   && echo "ok: scope-box usage" || { echo "FAIL: scope-box usage"; fail=1; }
 "$DIR/scope-box.sh" 2>/dev/null && { echo "FAIL: scope-box usage error"; fail=1; } || echo "ok: scope-box usage error"
 
+# check-kids static shape only: usage error path, no network
+"$DIR/check-kids.sh" 2>/dev/null && { echo "FAIL: check-kids usage error"; fail=1; } || echo "ok: check-kids usage error"
+
 # price-drift must be SYNC on the current tree
 SLID="${SLIDPHILABS_ROOT:-/home/ceedotrock/src/SlidPhiLabs}"
 out="$("$DIR/check-price-drift.sh" "$SLID" 2>&1)" \

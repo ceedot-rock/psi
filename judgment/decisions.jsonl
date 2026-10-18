@@ -3,3 +3,5 @@
 {"d":"2026-10-17","c":"decision","o":"site push 91f32ab ships tonight","why":"site work is done and verified; holding it gains nothing","expect":"91f32ab live on the site host","hit":true}
 {"d":"2026-10-17","c":"decision","o":"retire Wix; Fly serves the site now","why":"one live host beats two drifting copies","expect":"Wix gone, Fly serving, HOME-COPY.md renamed","hit":false}
 {"d":"2026-10-17","c":"decision","o":"bump scope: version-bump plus publish everything","why":"partial publishes rot; ship the whole set together","expect":"version bumped, everything published","hit":false}
+{"d":"2026-10-18","c":"decision","o":"rotate Rider identity keypair on kid skew","why":"kid mismatch means receivers reject; rotation restores the verify path","expect":"DMs verify live"}
+{"d":"2026-10-18","c":"decision","o":"write off $4.55 stranded Base USDC","why":"no keys, no gas, below-fee; the chase costs more than the balance","expect":"closed, one line, no further spend"}
