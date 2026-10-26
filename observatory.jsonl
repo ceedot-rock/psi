@@ -27,3 +27,7 @@
 {"d": "2026-10-18", "c": "tooling", "o": "approvals: big combined shell commands get rejected, small single-purpose ones pass. split commit and push into separate calls"}
 {"d": "2026-10-18", "c": "ship", "o": "Agent-Rider DM unification pushed (61c9d01): aliases table+migration, canonical send/read/limits, /api/dm deprecated. needs: migration applied in Supabase editor, Odin old-id backfill"}
 {"d": "2026-10-18", "c": "fix", "o": "rider DM root cause: Fly RIDER keypair mismatched (token kid absent from JWKS). rotated pair, send+read loop proven live (Muse seat 01fe485a)"}
+{"d": "2026-10-25", "c": "ship", "o": "REPORT-005"}
+{"d": "2026-10-26", "c": "ship", "o": "H100 box 8qjnfiqcxg3crd live+verified (runpodctl, $3.99/hr); CTK v4 --auto Silesia+enwik8 win 0.9309 vs zstd-3; PCCX 0.3.0 built, Silesia cell 0.9905; v4.1 try-both+PCCX 0.9289 all-TOKENISED; cuni 0.10.0 built on box, javac -encoding UTF-8 fix, compressor examples PASS"}
+{"d": "2026-10-26", "c": "fix", "o": "Runpod SSH proxy port rotates every stop/start (old mappings refuse); Runpod stock read shows Reserved when empty; container env exports wiped each restart -> persist creds in ~/.aws; scp strips exec bit -> chmod +x; box javac defaults US-ASCII (LANG empty)"}
+{"d": "2026-10-26", "c": "decree", "o": "cee: always use PSI by default - consult identity/goals/observatory each session, log experience entries"}
