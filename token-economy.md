@@ -81,6 +81,31 @@ runs 0.1–1M tokens.
 23. Cache-hit check after enabling (A1): confirm `cached_tokens` climbs;
     if it doesn't, the biggest plan silently failed.
 
+## G. Price book (plan 22) — incident classes priced from real past loops
+
+An `avoid` entry in `observatory.jsonl` carries its price inline as
+`~N tokens` (or `~Nk`/`~NM`), with the class in brackets, e.g.
+`[rabbit-hole] killed runaway sweep early; ~500k tokens`.
+Entries without a number count as unpriced: listed by the meter,
+never summed. Class defaults are conservative floors — claim above
+the default only with a session-log measurement cited in the entry.
+
+| class | default price | evidence |
+|---|---|---|
+| rabbit-hole (dead-end loop killed early) | ~100k tokens (low end of measured 0.1–1M) | intro above |
+| runaway-kill (derivative re-parse, orphan sweep) | ~500k tokens (midpoint of 0.1–1M) | 2026-10-28 sweep kill, observatory |
+| poll-skipped (no-poll discipline held) | ~60k tokens per poll at current sizes | B3 above |
+| dup-check-skipped (green check not re-run) | ~18k tokens (low end of measured 18–75k/step) | intro above |
+| bench-rerun-via-golden (read the receipt, skip the run) | TBD per bench, priced when benched | [golden.md](golden.md) |
+| orphan-pileup (kill-switch hygiene) | excluded: burns CPU/cash, not tokens | B16 above |
+
+`savings% = avoided / (actual + avoided)` over metered input tokens.
+Cost-basis companion (stated assumptions: cached input 0.1x,
+output 3x, avoided valued at 1x input):
+`savings% = 1 - cost_with / cost_without`.
+Both are printed by `scripts/savings.py`. Single-record samples lie;
+always read the aggregate.
+
 ## Explicit non-plans
 
 - Shrinking answers to save output tokens: 1/127th, not worth quality loss.

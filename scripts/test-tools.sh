@@ -14,8 +14,12 @@ for f in "$T/observatory.jsonl" "$T/mirror.jsonl" "$T/note.md"; do
     && echo "ok: obs appends $(basename "$f")" \
     || { echo "FAIL: obs appends $(basename "$f")"; fail=1; }
 done
-python3 -c 'import json; d=json.load(open("'"$T/observatory.jsonl"'")); assert d=={"d":"2026-10-17","c":"testcat","o":"hello world"}, d' \
+python3 - "$T/observatory.jsonl" <<'PYEOF' \
   && echo "ok: obs line is valid JSON" || { echo "FAIL: obs line is valid JSON"; fail=1; }
+import json, sys
+d = json.load(open(sys.argv[1]))
+assert d == {"d": "2026-10-17", "c": "testcat", "o": "hello world"}, d
+PYEOF
 "$DIR/obs.sh" onlyone 2>/dev/null && { echo "FAIL: obs usage error"; fail=1; } || echo "ok: obs usage error"
 
 # verify-live.sh: dead control -> UNKNOWN exit 2, never DOWN
@@ -55,5 +59,9 @@ out="$("$DIR/check-price-drift.sh" "$SLID" 2>&1)" \
 out="$("$DIR/check-discovery-sync.sh" "$SLID" 2>&1)" || true
 echo "$out"
 echo "ok: discovery-sync recorded (non-gating)"
+
+# thrift gate: 50 laws wired (durable collateral for the thrift enactment)
+"$DIR/thrift-check.sh" >/dev/null 2>&1 \
+  && echo "ok: thrift green" || { echo "FAIL: thrift green"; fail=1; }
 
 [[ $fail -eq 0 ]] && echo "TOOLS-GREEN" || { echo "TOOLS-RED"; exit 1; }

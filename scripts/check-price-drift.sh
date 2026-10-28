@@ -24,7 +24,7 @@ for sku, math in (('chamber-year', 'chamber_year'),):
         out.append('drift: sku %s root=%s pricing.json(%s)=%s' % (sku, a, math, b))
 print('\n'.join(out))
 EOF
-)"
+)" || { echo "PRICE-ERROR: could not read meter files under $ROOT" >&2; exit 1; }
 if [[ -z "$drift" ]]; then
   echo "PRICE-SYNC"
 else

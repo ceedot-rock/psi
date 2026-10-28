@@ -36,6 +36,8 @@ for f in README.md observatory.jsonl identity.md env-model.json capabilities.md 
   world/actuators.md world/schedules.md world/notifications.md world/presence-honesty.md \
   world/tool-hygiene.md crown/quad-review.md crown/quad-map.md crown/succession-test.md \
   crown/final-rule.md \
+  powershell-traps.md golden.md token-economy.md scripts/usage-line.py scripts/savings.py \
+  thrift/PRINCIPLES.md thrift/RITES.md thrift/MAP.md scripts/thrift-check.sh \
   ; do need "$f"; done
 python3 - "$ROOT/observatory.jsonl" "$ROOT/learning/surprises.jsonl" <<'PYEOF' || { echo "GAP: JSONL invalid"; fail=1; }
 import json, sys

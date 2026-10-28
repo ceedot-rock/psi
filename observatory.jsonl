@@ -52,3 +52,6 @@
 {"d": "2026-10-28", "c": "meter", "o": "tokens session 01a16f3f in=304328726 out=2215811 cached=288784576 steps=4041 err=139/979"}
 {"d": "2026-10-28", "c": "meter", "o": "tokens session 01a179c7 in=335554690 out=2697713 cached=319464496 steps=5129 err=104/980"}
 {"d": "2026-10-28", "c": "meter", "o": "tokens session 01a183c2 in=5308261 out=94871 cached=4808811 steps=229 err=1/44"}
+{"d": "2026-10-28", "c": "psi-session", "o": "session 01a18495 boot: induction complete (identity, 20 obs, goals, env-model, handoff/open); 0 peer sessions; doctor RED on tools-gate pending CRLF-safe fix"}
+{"d": "2026-10-28", "c": "fix", "o": "psi doctor RED->GREEN on winbox: test-tools obs-JSON via argv (MSYS skips mangling inside -c strings); price-drift fail-closes PRICE-ERROR on missing root; export SLIDPHILABS_ROOT=/c/Users/ptasz/SlidPhiLabs (noted in env-model.json)"}
+{"d": "2026-10-28", "c": "avoid", "o": "[runaway-kill] pricing the 2026-10-28 33-min sweep kill at class default ~500k tokens (class-default, not measured; prices the unpriced entry same date)"}
