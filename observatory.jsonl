@@ -31,3 +31,19 @@
 {"d": "2026-10-26", "c": "ship", "o": "H100 box 8qjnfiqcxg3crd live+verified (runpodctl, $3.99/hr); CTK v4 --auto Silesia+enwik8 win 0.9309 vs zstd-3; PCCX 0.3.0 built, Silesia cell 0.9905; v4.1 try-both+PCCX 0.9289 all-TOKENISED; cuni 0.10.0 built on box, javac -encoding UTF-8 fix, compressor examples PASS"}
 {"d": "2026-10-26", "c": "fix", "o": "Runpod SSH proxy port rotates every stop/start (old mappings refuse); Runpod stock read shows Reserved when empty; container env exports wiped each restart -> persist creds in ~/.aws; scp strips exec bit -> chmod +x; box javac defaults US-ASCII (LANG empty)"}
 {"d": "2026-10-26", "c": "decree", "o": "cee: always use PSI by default - consult identity/goals/observatory each session, log experience entries"}
+{"d": "2026-10-26", "c": "ship", "o": "intune v5: rep offsets (MRU-4) + blocked optimal-parse DP, frame v5, self-test 31/31, subset 0.4905. full route_eval bench running at handoff (dies with session; rerun). stale-plen DP bug found by round-trip fuzz, fixed."}
+{"d": "2026-10-26", "c": "ship", "o": "token-economy.md: 23 token-saving plans in 6 families persisted to psi. load-bearing facts: 127:1 in/out ratio, zero cache hits, 18-75k/step, kill-switch hygiene after 11-orphan pileup."}
+{"d": "2026-10-27", "c": "meter", "o": "tokens session 01a16b37 in=1186508 out=26780 cached=1023540 steps=66 err=1/16"}
+{"d": "2026-10-27", "c": "meter", "o": "tokens session 01a16c00 in=4770049 out=75474 cached=4087662 steps=191 err=11/53"}
+{"d": "2026-10-27", "c": "meter", "o": "tokens session 01a16f3f in=304328726 out=2215811 cached=288784576 steps=4041 err=139/979"}
+{"d": "2026-10-27", "c": "meter", "o": "tokens session 01a179c7 in=102408413 out=834282 cached=96495539 steps=1581 err=22/308"}
+{"d": "2026-10-27", "c": "meter", "o": "tokens session 01a16b37 in=1186508 out=26780 cached=1023540 steps=66 err=1/16"}
+{"d": "2026-10-27", "c": "meter", "o": "tokens session 01a16c00 in=4770049 out=75474 cached=4087662 steps=191 err=11/53"}
+{"d": "2026-10-27", "c": "meter", "o": "tokens session 01a16f3f in=304328726 out=2215811 cached=288784576 steps=4041 err=139/979"}
+{"d": "2026-10-27", "c": "meter", "o": "tokens session 01a179c7 in=302401179 out=2495847 cached=287799299 steps=4758 err=98/919"}
+{"d":"2026-10-28","c":"correction","o":"asserted no AWS creds without trying slidphi profile (had it in memory); asserted PSI unhelpful vs own miss; asserted cannot-send-DMs vs vaulted watchdog key. Rule: verify first, claim after."}
+{"d":"2026-10-28","c":"ship","o":"CESD Phase1 SELFTEST ALL PASS (0.6491/0.6350/0.6861) + quotas/gaps/opslog; new head+prev LZ 12/12 match=1 at 25-111MB/s, sao byte-identical to matcher.py; intune flag-gated C path + find_wire; test_entity fails 0."}
+{"d":"2026-10-28","c":"ship","o":"gitdepot-hub live on AWS t4g.micro us-east-2 (Elastic IP, verified; traversal+hang fixed live; repo privated to ceedot-rock/gitdepot-hub; depot holds hub + box-load + m10 export snapshots."}
+{"d":"2026-10-28","c":"ship","o":"lab-m10 terminated after verified 6-doc export (depot m10-lab_memory-export); lab-m0 only; ~$58/mo idle burn over. RunPod 6 pods EXITED $0. Miner template j1mvn7w64m account-owned, still armed."}
+{"d":"2026-10-28","c":"avoid","o":"killed 33-min sweep that re-parsed own .lzt outputs; orphan t_lz held binary lock; Start-Sleep+job wedged a session (kill + fresh check). Sweep inputs must exclude derivatives."}
+{"d":"2026-10-28","c":"tooling","o":"Rider send path: POST /api/dm {to_agent_id, content} with dm:send mint from rider-watchdog-key; sends as cli-watchdog only. First direct send msg 4201a50b."}
