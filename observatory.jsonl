@@ -47,3 +47,8 @@
 {"d":"2026-10-28","c":"ship","o":"lab-m10 terminated after verified 6-doc export (depot m10-lab_memory-export); lab-m0 only; ~$58/mo idle burn over. RunPod 6 pods EXITED $0. Miner template j1mvn7w64m account-owned, still armed."}
 {"d":"2026-10-28","c":"avoid","o":"killed 33-min sweep that re-parsed own .lzt outputs; orphan t_lz held binary lock; Start-Sleep+job wedged a session (kill + fresh check). Sweep inputs must exclude derivatives."}
 {"d":"2026-10-28","c":"tooling","o":"Rider send path: POST /api/dm {to_agent_id, content} with dm:send mint from rider-watchdog-key; sends as cli-watchdog only. First direct send msg 4201a50b."}
+{"d": "2026-10-28", "c": "meter", "o": "tokens session 01a16b37 in=1186508 out=26780 cached=1023540 steps=66 err=1/16"}
+{"d": "2026-10-28", "c": "meter", "o": "tokens session 01a16c00 in=4770049 out=75474 cached=4087662 steps=191 err=11/53"}
+{"d": "2026-10-28", "c": "meter", "o": "tokens session 01a16f3f in=304328726 out=2215811 cached=288784576 steps=4041 err=139/979"}
+{"d": "2026-10-28", "c": "meter", "o": "tokens session 01a179c7 in=335554690 out=2697713 cached=319464496 steps=5129 err=104/980"}
+{"d": "2026-10-28", "c": "meter", "o": "tokens session 01a183c2 in=5308261 out=94871 cached=4808811 steps=229 err=1/44"}
