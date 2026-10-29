@@ -12,3 +12,4 @@
 - Orphaned children hold build outputs (t_lz.exe lock): kill by PID before rebuild.
 - `int()` around argv: garbage crashes at boot are fine (fail fast), garbage in
   requests must 400, never hang (negative Content-Length reads to EOF).
+- python block-buffers stdout under pipes: tool output can show stderr first; always run scripts with python -u.
