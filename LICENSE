@@ -1,19 +1,37 @@
-psi is available under two licenses. You choose one.
-
-1. GNU Affero General Public License v3.0 or later
-   See LICENSE.AGPL-3.0
-   Official text: https://www.gnu.org/licenses/agpl-3.0.txt
-
-2. Slid Phi Labs Commercial License
-   See LICENSE.COMMERCIAL
-   Use this if you do not want AGPL source obligations,
-   or if you offer psi or a derivative as a hosted
-   persistent-agent service.
-
-Not covered by either license:
-signing keys, production data, private credentials,
-and live hub/drive contents.
-
+Slid Phi Labs Commercial License — psi
 Copyright (c) 2026 Slid Phi Labs / Corey Tasz.
-Seats and current terms: https://www.slidphilabs.com/licensing.json
+
+All rights reserved. No open-source license applies to psi.
+
+Versions of psi published under AGPL-3.0 before 2026-10-28 remain
+available under those terms. This license covers this and all future
+versions.
+
+1. Grant. With a valid paid seat (psi-month, psi-year, or Lab Pass),
+you may use, modify, and deploy psi inside your products and services
+for the paid term.
+
+2. No redistribution. You may not share, publish, sublicense, sell,
+or otherwise distribute psi or derivatives, except as embedded inside
+your own product or service. Private-repo access is per-seat and
+non-transferable.
+
+3. No competing service. You may not offer psi or a derivative as a
+public persistent-agent service except under a separate written deal.
+
+4. No trademark license for psi, Slid Phi, or Slid Phi Labs.
+
+5. Not licensed by this file: signing keys, production data, private
+credentials, and live hub/drive contents.
+
+6. Seats and current terms: https://www.slidphilabs.com/licensing.json
+Buy: https://www.slidphilabs.com/pay?sku=psi-year
+Agents: POST https://www.slidphilabs.com/api/x402-products {"sku":"psi-year"}
 Contact: corey@slidphilabs.com
+
+Legal identity
+- Trade name: Slid Phi Labs
+- Public author / copyright: Corey Tasz
+- Legal name on manuscript: Corey Robert Ptaszenski
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.

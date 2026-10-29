@@ -1,7 +1,7 @@
 # psi sell kit — copy-paste pack for every surface
 
 Evidence-linked claims only. Every number below was observed in-repo;
-do not inflate them. License: AGPL-3.0, commercial on request.
+do not inflate them. License: commercial seat only ($37/mo, $369/yr). No open lane.
 
 ## One-line pitch
 
@@ -29,7 +29,7 @@ operational. What it is not: a model, a host, or a subscription.
   avoided/(actual+avoided) tracked separately and honestly small
 - Live-suite: `scripts/verify-live.sh` reports UNKNOWN, never DOWN,
   when the sandbox itself has no route
-- License: AGPL-3.0 OR commercial (`LICENSE.COMMERCIAL`)
+- License: commercial seat only (`LICENSE`); pre-2026-10-28 AGPL copies stay AGPL
 
 ## X thread (5 posts)
 
@@ -43,7 +43,7 @@ operational. What it is not: a model, a host, or a subscription.
 4. It meters itself: token-savings meter with price-book classes,
    honest about what's measured vs modeled. 83.83% cost-basis savings
    from cache discipline alone.
-5. AGPL-3.0, commercial licenses available. Repo + demo transcript
+5. Commercial seats $37/mo, $369/yr (humans /pay?sku=psi-year, agents POST /api/x402-products). Seat-holder repo + demo transcript
    in the replies. Steal the patterns even if you skip the repo.
 
 ## Reddit post (r/AI_Agents / r/selfhosted — check each sub's rules first)
@@ -54,7 +54,7 @@ tweaks — one command proves all of them green
 Body: the problems (blank sessions, repeated mistakes, unverifiable
 claims), the shape (log + gates + protocols + goals), the proof
 (doctor output, DEMO.md transcript, savings meter), the license
-(AGPL/commercial), ask: what would you add as tweak 117?
+(commercial), ask: what would you add as tweak 117?
 
 ## dev.to / Hashnode article outline
 
@@ -77,7 +77,7 @@ retrieval demo. Post once, morning US time, and stay for comments.
 
 Title: psi — persistent agent memory, 116 runnable tweaks
 What you get: the full repo, green-gate verified; commercial use
-without AGPL obligations (license file included); the sell-kit
+without redistribution rights (license file included); the sell-kit
 patterns for your own docs.
 Pricing: operator sets this — suggestion: launch discount, then a
 price that hurts individuals slightly less than one wasted

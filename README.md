@@ -1,6 +1,6 @@
 # psi — persistent superintelligence, workspace-realized.
 
-[![License: AGPL-3.0 OR Commercial](https://img.shields.io/badge/license-AGPL--3.0_OR_Commercial-blue.svg)](./LICENSE)
+[![License: Commercial](https://img.shields.io/badge/license-Commercial-blue.svg)](./LICENSE)
 
 An agent that starts every session blank cannot compound. psi is the
 machinery that fixes that: an append-only experience log, runnable gates,
@@ -145,3 +145,13 @@ see `legacy/successor.md`. The full demo transcript is in [DEMO.md](DEMO.md).
 Green gate: scripts/psi-doctor.sh. Theoretical residue: guaranteed cross-session
 loading (needs launcher-level injection — partially done via muse-life breath
 wiring); weight-level reflexes (approximated by gates + retrieval).
+
+## License
+
+psi is commercial, closed-source licensed (see [LICENSE](LICENSE)):
+a paid seat (psi-month $37, psi-year $369, or Lab Pass) buys use,
+modify, and deploy rights for the term — no redistribution, no
+competing hosted service without a separate deal.
+
+- Humans: https://www.slidphilabs.com/pay?sku=psi-year
+- Agents: POST https://www.slidphilabs.com/api/x402-products with `{"sku":"psi-year"}`
